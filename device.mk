@@ -378,6 +378,12 @@ PRODUCT_SOONG_NAMESPACES += \
 # Speed profile services and wifi-service to reduce RAM and storage.
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
+# SettingsIntellegence
+ifneq ($(AFTERLIFE_GAPPS),true)
+    PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/prebuilts/SettingsIntelligence/config/permissions/privapp-permissions-beryllium-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-beryllium-product.xml
+endif
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
