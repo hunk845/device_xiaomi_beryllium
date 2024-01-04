@@ -11,12 +11,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common Awaken stuff.
-$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
+# Inherit some common afterlife stuff.
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_BLUR := true
+USE_PIXEL_CHARGING := true
+AFTERLIFE_MAINTAINER := HUNK
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := awaken_beryllium
+PRODUCT_NAME := afterlife_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1

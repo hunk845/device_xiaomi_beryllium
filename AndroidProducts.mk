@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/awaken_beryllium.mk
+    $(LOCAL_DIR)/afterlife_beryllium.mk
 
 COMMON_LUNCH_CHOICES := \
-    awaken_beryllium-user \
-    awaken_beryllium-userdebug \
-    awaken_beryllium-eng
+    afterlife_beryllium-user \
+    afterlife_beryllium-userdebug \
+    afterlife_beryllium-eng
